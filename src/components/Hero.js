@@ -1,8 +1,11 @@
 import React from 'react'
 import heroImage from "../images/heroImage.JPG"
+import { Navbar } from './Navbar'
 
 export const Hero = () => {
   return (
+      <>
+      <Navbar />
     <div className="hero min-h-screen" style={{backgroundImage: `url(${heroImage})`}}>
     <div className="hero-overlay bg-opacity-60"></div>
     <div className="hero-content text-center text-neutral-content">
@@ -13,5 +16,6 @@ export const Hero = () => {
       </div>
     </div>
   </div>
+      </>
   )
 }
