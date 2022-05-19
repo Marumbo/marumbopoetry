@@ -1,140 +1,187 @@
-import React, {useState,useEffect, useRef} from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import imgSideA from "../images/sideA.jpeg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import { Navbar } from "./Navbar";
-import hardtolove from "../audios/hard-to-love.mp3"
-import mosaics from "../audios/mosaic.mp3"
-import playingItSafe from "../audios/playing-it-safe.mp3"
-import starCrossedLovers from "../audios/star-crossed-lovers.mp3"
+import { useSpring, animated, easings } from "react-spring";
 
-
+import hardtolove from "../audios/hard-to-love.mp3";
+import mosaics from "../audios/mosaic.mp3";
+import playingItSafe from "../audios/playing-it-safe.mp3";
+import starCrossedLovers from "../audios/star-crossed-lovers.mp3";
 
 export const SideA = () => {
+  const fadeInImage = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 200,
+    config: {
+      duration: 1000,
+      easing: easings.easeInCirc,
+    },
+  });
 
-    const audioPlayer = useRef(null)
+  const fadeInWords = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 400,
+    config: {
+      duration: 2000,
+      easing: easings.easeInCirc,
+    },
+  });
+  const fadeInPoems = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 500,
+    config: {
+      duration: 2000,
+      easing: easings.easeInCirc,
+    },
+  });
 
-    const [poems] = useState(
-    [
-
-        {
-            "id":1,
-            "title":"Hard to love",
-            "src": hardtolove
-        },
-        {
-            "id":2,
-            "title":"Mosaics",
-            "src":mosaics
-        },
-        {
-            "id":3,
-            "title":"Playing it safe",
-            "src":playingItSafe
-        },
-        {
-            "id":4,
-            "title":"Star Crossed Lovers",
-            "src":starCrossedLovers
-        },
-
-    ])
-
-     const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
-    
-    const updateCurrentPoem =(id) =>{
-      
-        const index = id-1;
-
-        setCurrentPoemIndex(index);
-      
+  const fadeInPlayer = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 600,
+    config:{
+        duration:2000,
+        easing:easings.easeInCirc
     }
 
-    const previousClick=(id)=>{
-        console.log("previous click")
-        console.log(id)
+         })
 
-        if((id-2) <= 0){
+  const audioPlayer = useRef(null);
 
-            setCurrentPoemIndex(0)
-          
-        }
-        else{
-            setCurrentPoemIndex(id-2)
-        }
-        console.log("after")
-        console.log(currentPoemIndex)
+  const [poems] = useState([
+    {
+      id: 1,
+      title: "Hard to love",
+      duration: "01:28",
+      src: hardtolove,
+    },
+    {
+      id: 2,
+      title: "Mosaics",
+      duration: "00:50",
+      src: mosaics,
+    },
+    {
+      id: 3,
+      title: "Playing it safe",
+      duration: "02:54",
+      src: playingItSafe,
+    },
+    {
+      id: 4,
+      title: "Star Crossed Lovers",
+      duration: "01:32",
+      src: starCrossedLovers,
+    },
+  ]);
 
+  const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
+
+  const updateCurrentPoem = (id) => {
+    const index = id - 1;
+
+    setCurrentPoemIndex(index);
+  };
+
+  const previousClick = (id) => {
+    console.log("previous click");
+    console.log(id);
+
+    if (id - 2 <= 0) {
+      setCurrentPoemIndex(0);
+    } else {
+      setCurrentPoemIndex(id - 2);
     }
+    console.log("after");
+    console.log(currentPoemIndex);
+  };
 
-    const nextClick = (id)=>{
+  const nextClick = (id) => {
+    console.log("next click");
 
-        console.log("next click")
-
-        if(id>= poems.length){
-            setCurrentPoemIndex(poems.length-1)
-        }
-        else{
-            setCurrentPoemIndex(id)
-        }
+    if (id >= poems.length) {
+      setCurrentPoemIndex(poems.length - 1);
+    } else {
+      setCurrentPoemIndex(id);
     }
+  };
 
-    useEffect(()=>{
-        console.log(currentPoemIndex)
-        console.log(audioPlayer.current.audio.current.src)
-    })
+  useEffect(() => {
+    console.log(currentPoemIndex);
+    console.log(audioPlayer.current.audio.current.src);
+  });
 
-    
- 
   return (
-<>
-<Navbar />
+    <>
+      <div className="container flex sm:flex-col md:flex-row space-y-4 space-x- 4 mx-auto mt-5 py-2 justify-around">
+        <animated.div style={fadeInImage} className="md:w-1/2">
+          <img className="rounded" src={imgSideA} alt="Side A" />
+        </animated.div>
 
-    <div className="container flex sm:flex-col md:flex-row space-y-4 space-x- 4 mx-auto mt-5 py-2 justify-around">
-        
-        <div className="md:w-1/2">
-        <img className = "rounded " src={imgSideA} alt="Side A" />
-        </div>
 
-        <div className="flex flex-col space-y-2 mx-auto md:w-1/2">
-        <p className="max-wd-md sm:text-center"> Side A of the project. <br /> 
-        Playing it safe is a journey through 7 poems.</p>
-        
-        <div className="flex px-4 pt-4 flex-col">
-            {
-                poems.map((poem)=>(
-                    
-            <h2 className="text-2xl text-center" key={poem.id} onClick={()=>updateCurrentPoem(poem.id)}> {poem.title}</h2>
-        
-                )   
-                )
-            }
+        <div className="flex flex-col space-y-2 text-center mx-auto md:w-1/2">
+        <animated.div style={fadeInWords}>
+          <h1 className="text-4xl mb-2 font-black">Side A</h1>
+          <p className="max-wd-md sm:text-center text-xl">
+            Playing it safe is a journey through 7 poems.
+            <br />
+            A story of love found and lost. <br />
+            Identity lost and found.
+          </p>
+        </animated.div>
 
-        </div>
+          <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col">
+            {poems.map((poem) => (
+              <div
+                key={poem.id}
+                className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200"
+              >
+                <div className="flex flex-row space-x-4">
+                  <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
+                  <h2
+                    className="sm:text-2xl text-4xl text-center"
+                    key={poem.id}
+                    onClick={() => updateCurrentPoem(poem.id)}
+                  >
+                    {" "}
+                    {poem.title}
+                  </h2>
+                </div>
+                <div className="">
+                  <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>
+                </div>
+              </div>
+            ))}
+          </animated.div>
         </div>
       </div>
-     {
-     //add player container 
-
-    }
-        <div className="container flex mt-5 mx-auto justify-center" >
-            
-            <AudioPlayer  
-            ref={audioPlayer}
-            src={poems[currentPoemIndex].src}
-            customAdditionalControls={[]}
-            showSkipControls={true}
-            autoPlay = {false}
-            onClickPrevious={()=> previousClick(poems[currentPoemIndex].id)} 
-            onClickNext={()=> nextClick(poems[currentPoemIndex].id)}
-            header= {`Now playing: ${poems[currentPoemIndex].title}`}
-            
-            onLoadStart={()=>{console.log("load start")}}
-            onLoadedData={()=>{console.log("data loaded!")}}
-             />
-
-        </div>
+      {
+        //add player container
+      }
+      <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center">
+        <AudioPlayer
+          ref={audioPlayer}
+          src={poems[currentPoemIndex].src}
+          customAdditionalControls={[]}
+          showSkipControls={true}
+          autoPlay={false}
+          onClickPrevious={() => previousClick(poems[currentPoemIndex].id)}
+          onClickNext={() => nextClick(poems[currentPoemIndex].id)}
+          header={`Now playing: ${poems[currentPoemIndex].title}`}
+          onLoadStart={() => {
+            console.log("load start");
+          }}
+          onLoadedData={() => {
+            console.log("data loaded!");
+          }}
+        />
+      </animated.div>
     </>
-  )
-}
+  );
+};
+

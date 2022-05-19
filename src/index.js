@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { SideA } from './components/SideA';
+import { EpSelector } from './components/EpSelector';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +12,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="sideA" element={<SideA />} />
+      <Route path="epSelector" element={<EpSelector />} />
     </Routes>
     </BrowserRouter>
  // </React.StrictMode>
