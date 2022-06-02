@@ -88,7 +88,7 @@ export const SideB = () => {
     <div className="container flex sm:flex-col md:flex-row space-y-4 space-x- 4 mx-auto mt-5 py-2 justify-around">
         
         <animated.div style={fadeInImage} className="md:w-1/2">
-        <img className = "rounded " src={imgSideB} alt="Side A" />
+        <img className = "rounded  dropshadow-xl" src={imgSideB} alt="Side A" />
         </animated.div>
 
         <div className="flex flex-col space-y-2 text-center mx-auto md:w-1/2">
@@ -106,10 +106,12 @@ export const SideB = () => {
         <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col">
             {
                 poems.map((poem)=>(
-             <div key={poem.id} className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200">
+             <div key={poem.id} 
+             onClick={()=>updateCurrentPoem(poem.id)}
+             className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200">
                  <div className="flex flex-row space-x-4">
                 <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
-                 <h2 className="sm:text-2xl text-4xl text-center" key={poem.id} onClick={()=>updateCurrentPoem(poem.id)}> {poem.title}</h2>
+                 <h2 className="sm:text-2xl text-4xl text-center" key={poem.id} > {poem.title}</h2>
                 </div>
                 <div className="">
                     <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>

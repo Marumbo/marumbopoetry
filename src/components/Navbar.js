@@ -60,7 +60,7 @@ export const Navbar = () => {
         </li>
         <li> <button className="btn btn-ghost">Buy </button></li>
         <li> <button className="btn btn-ghost">Stream Online</button></li>
-        <li> <button className="btn btn-ghost">About Me </button></li>
+        <li> <Link to="/bio" className="btn btn-ghost">About Me</Link></li>
 
     </ul>
   </div>

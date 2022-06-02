@@ -36,7 +36,7 @@ export const EpSelector = () => {
       Side A</button> 
       
   <button className={`tab tab-lg tab-lifted ${!isSideA ? "tab-active" :""}`} onClick={()=>toggleSide()}>
-      SideB</button> 
+      Side B</button> 
 </div>
 
 {
