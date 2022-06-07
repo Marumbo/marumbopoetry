@@ -7,23 +7,23 @@ export const Navbar = () => {
 
     {
       "name":"facebook",
-      "icon":<BsFacebook />,
+      "icon":<BsFacebook size={30} />,
       "link":"https://facebook.com/marumbopoetry"
     },
     {
 
       "name":"twitter",
-      "icon":<BsTwitter />,
+      "icon":<BsTwitter size={30} />,
       "link":"https://twitter.com/marumbopoetry",
     },
     {
       "name":"instagram",
-      "icon":<BsInstagram />,
+      "icon":<BsInstagram size={30} />,
       "link":"https://instagram.com/marumbopoetry"
     },
     {
       "name":"youtube",
-      "icon":<BsYoutube />,
+      "icon":<BsYoutube size={30} />,
       "link":"https://www.youtube.com/channel/UCDYA--o2QX7XWo_tGkkv13w/videos"
     }
   ]
@@ -40,27 +40,27 @@ export const Navbar = () => {
       </label>
       <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       <li>
-      <Link to="/epSelector">Listen & Download</Link> 
+      <Link to="/epSelector" className="btn btn-ghost">Listen!</Link> 
         </li>
         <li> <button>Buy </button></li>
         <li> <button>Stream Online</button></li>
-        <li> <button>About Me </button></li>
+        <li> <Link to="/bio" className="btn btn-ghost">About Me</Link></li>
 
     </ul>
     </div>
     <Link to="/">
 
-    <button className="btn btn-ghost normal-case text-xl">MarumboPoetry</button>
+    <button className="btn btn-ghost text-2xl p-2">MarumboPoetry</button>
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal p-0">
+    <ul className="menu menu-horizontal p-2 space-x-2">
       <li>
-      <Link to="/epSelector" className="btn btn-ghost">Listen & Download</Link>
+      <Link to="/epSelector" className="btn btn-ghost text-2xl p-2">Listen!</Link>
         </li>
-        <li> <button className="btn btn-ghost">Buy </button></li>
-        <li> <button className="btn btn-ghost">Stream Online</button></li>
-        <li> <Link to="/bio" className="btn btn-ghost">About Me</Link></li>
+        <li> <button className="btn btn-ghost text-2xl p-2">Buy </button></li>
+        <li> <button className="btn btn-ghost text-2xl p-2">Stream Online</button></li>
+        <li> <Link to="/bio" className="btn btn-ghost text-2xl p-2">About Me</Link></li>
 
     </ul>
   </div>
@@ -70,8 +70,9 @@ export const Navbar = () => {
       {
         socialMedia.map((socials)=>(
 
-          <a href= {socials.link} target={"_blank"} rel="noreferrer"  >
+          <a href= {socials.link} target={"_blank"} rel="noreferrer" className="btn btn-outline btn-neutral"  >
             {socials.icon}
+            
           </a>
 
         ))

@@ -118,8 +118,8 @@ export const SideA = () => {
 
   return (
     <>
-      <div className="container flex sm:flex-col md:flex-row space-y-4 space-x- 4 mx-auto mt-5 py-2 justify-around">
-        <animated.div style={fadeInImage} className="md:w-1/2">
+      <div className="container flex sm:flex-col md:flex-row space-y-4 space-x-8 mx-auto mt-5 py-2 justify-around">
+        <animated.div style={fadeInImage} className="drop-shadow-2xl md:w-1/2">
           <img className="rounded dropshadow-xl" src={imgSideA} alt="Side A" />
         </animated.div>
 
@@ -145,7 +145,7 @@ export const SideA = () => {
                 <div className="flex flex-row space-x-4">
                   <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
                   <h2
-                    className="sm:text-2xl text-4xl text-center"
+                    className="sm:text-2xl text-4xl text-center font-bold"
                     key={poem.id}
                     
                   >

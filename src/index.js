@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { EpSelector } from './components/EpSelector';
-import Bio from './components/Bio';
+import { EpSelector } from './pages/EpSelector';
+import Bio from './pages/Bio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

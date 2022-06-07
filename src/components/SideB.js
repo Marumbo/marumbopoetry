@@ -85,9 +85,9 @@ export const SideB = () => {
   return (
 <>
 
-    <div className="container flex sm:flex-col md:flex-row space-y-4 space-x- 4 mx-auto mt-5 py-2 justify-around">
+    <div className="container flex sm:flex-col md:flex-row space-y-4 space-x-8 mx-auto mt-5 py-2 justify-around">
         
-        <animated.div style={fadeInImage} className="md:w-1/2">
+        <animated.div style={fadeInImage} className="drop-shadow-2xl md:w-1/2">
         <img className = "rounded  dropshadow-xl" src={imgSideB} alt="Side A" />
         </animated.div>
 
@@ -111,7 +111,7 @@ export const SideB = () => {
              className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200">
                  <div className="flex flex-row space-x-4">
                 <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
-                 <h2 className="sm:text-2xl text-4xl text-center" key={poem.id} > {poem.title}</h2>
+                 <h2 className="sm:text-2xl text-4xl text-center font-bold" key={poem.id} > {poem.title}</h2>
                 </div>
                 <div className="">
                     <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>
