@@ -16,7 +16,7 @@ const BioSection = () => {
 
     <div className="flex flex-col md:w-2/3 mx-auto px space-y-4">
        <h1 className="text-white text-center container text-6xl"> A bit about my poetry journey!</h1>
-    <p className="text-white text-center container text-2xl">
+    <p className="text-white text-center container text-2xl p-4">
 Marumbo Sichinga popularly known as Marumbo the Poet is a Spoken Word Artist from Malawi, Africa.  <br />
 
 Marumbo developed a passion for the creative freedom in poetry while still in college and developed his art for two years to emerge and Malawi's starring poets. 

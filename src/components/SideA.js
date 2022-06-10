@@ -11,6 +11,7 @@ import playingItSafe from "../audios/playing-it-safe.mp3";
 import starCrossedLovers from "../audios/star-crossed-lovers.mp3";
 
 export const SideA = () => {
+
   const fadeInImage = useSpring({
     to: { opacity: 1 },
     from: { opacity: 0 },
@@ -165,6 +166,7 @@ export const SideA = () => {
         //add player container
       }
       <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center">
+        
         <AudioPlayer
           ref={audioPlayer}
           src={poems[currentPoemIndex].src}

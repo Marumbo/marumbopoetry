@@ -32,7 +32,7 @@ export const Navbar = () => {
  
  
   return (
-    <div className="navbar bg-base-100 mx-auto">
+    <div className="navbar bg-base-100 mx-auto ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -70,7 +70,10 @@ export const Navbar = () => {
       {
         socialMedia.map((socials)=>(
 
-          <a href= {socials.link} target={"_blank"} rel="noreferrer" className="btn btn-outline btn-neutral"  >
+          <a href= {socials.link}
+          key={socials.name} 
+          target={"_blank"} rel="noreferrer" 
+          className="btn btn-outline btn-neutral"  >
             {socials.icon}
             
           </a>
