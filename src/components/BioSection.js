@@ -1,20 +1,22 @@
 import React from 'react'
 import bioImage from '../images/bioImage.JPG'
 
+
 const BioSection = () => {
   return (
    
-    <div className="hero flex bg-black md:space-x-8 sm:flex-col md:flex-row mx-auto mt-4 sm:space-y-2">
+    <div className="hero flex flex-col bg-black md:space-x-8 sm:flex-col lg:flex-row mx-auto mt-4 space-y-6 p-4">
         
-    <div className="flex md:w-1/3 mx-auto px-4 justify-around ">
+    <div className="flex md:w-1/3 mx-auto justify-around ">
    
-    <img className="rounded dropshadow-xl xl:h-1/4 xl:w-2/4" 
-    
+    <img className="rounded dropshadow-xl w-full xl:h-1/4 xl:w-2/4" 
+    width={600}
+    height={600}
     src={bioImage} 
     alt="Bio"/>
     </div>
 
-    <div className="flex flex-col md:w-2/3 mx-auto px space-y-4">
+    <div className="flex flex-col items-center md:w-2/3 mx-auto space-y-4">
        <h1 className="text-white text-center container text-6xl"> A bit about my poetry journey!</h1>
     <p className="text-white text-center container text-2xl p-4">
 Marumbo Sichinga popularly known as Marumbo the Poet is a Spoken Word Artist from Malawi, Africa.  <br />

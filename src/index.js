@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { EpSelector } from './pages/EpSelector';
 import Bio from './pages/Bio';
+import Buy from './pages/Buy';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="epSelector" element={<EpSelector />} />
       <Route path="bio" element={<Bio />} />
+      <Route path="buy" element={<Buy />} />
     </Routes>
     </BrowserRouter>
  // </React.StrictMode>

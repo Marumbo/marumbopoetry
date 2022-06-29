@@ -42,7 +42,7 @@ export const Navbar = () => {
       <li>
       <Link to="/epSelector" className="btn btn-ghost">Listen!</Link> 
         </li>
-        <li> <button>Buy </button></li>
+        <li> <Link to="/buy" className="btn btn-ghost text-2xl p-2">Buy!</Link></li>
         <li> <button>Stream Online</button></li>
         <li> <Link to="/bio" className="btn btn-ghost">About Me</Link></li>
 
@@ -58,7 +58,7 @@ export const Navbar = () => {
       <li>
       <Link to="/epSelector" className="btn btn-ghost text-2xl p-2">Listen!</Link>
         </li>
-        <li> <button className="btn btn-ghost text-2xl p-2">Buy </button></li>
+        <li> <Link to="/buy" className="btn btn-ghost text-2xl p-2">Buy!</Link></li>
         <li> <button className="btn btn-ghost text-2xl p-2">Stream Online</button></li>
         <li> <Link to="/bio" className="btn btn-ghost text-2xl p-2">About Me</Link></li>
 
