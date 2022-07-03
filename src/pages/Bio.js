@@ -130,7 +130,7 @@ const Bio = () => {
           setEmail(e.target.value);
           console.log(e.target.value);
         }}
-        placeholder="youremail@gmail.com" 
+        placeholder="youremail@mail.com" 
         className=" text-2xl input input-bordered input-accent input-lg w-96" />
         
         <textarea 

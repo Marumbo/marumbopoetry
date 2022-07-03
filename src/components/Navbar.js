@@ -7,23 +7,23 @@ export const Navbar = () => {
 
     {
       "name":"facebook",
-      "icon":<BsFacebook size={30} />,
+      "icon":<BsFacebook size={20} />,
       "link":"https://facebook.com/marumbopoetry"
     },
     {
 
       "name":"twitter",
-      "icon":<BsTwitter size={30} />,
+      "icon":<BsTwitter size={20} />,
       "link":"https://twitter.com/marumbopoetry",
     },
     {
       "name":"instagram",
-      "icon":<BsInstagram size={30} />,
+      "icon":<BsInstagram size={20} />,
       "link":"https://instagram.com/marumbopoetry"
     },
     {
       "name":"youtube",
-      "icon":<BsYoutube size={30} />,
+      "icon":<BsYoutube size={20} />,
       "link":"https://www.youtube.com/channel/UCDYA--o2QX7XWo_tGkkv13w/videos"
     }
   ]
@@ -42,9 +42,15 @@ export const Navbar = () => {
       <li>
       <Link to="/epSelector" className="btn btn-ghost">Listen!</Link> 
         </li>
-        <li> <Link to="/buy" className="btn btn-ghost text-2xl p-2">Buy!</Link></li>
-        <li> <button>Stream Online</button></li>
-        <li> <Link to="/bio" className="btn btn-ghost">About Me</Link></li>
+        <li> <Link to="/buy" className="btn btn-ghost ">Buy!</Link></li>
+        <li> 
+          <a href= "https://songwhip.com/marumbosichinga/playing-it-safe"
+        className="btn btn-ghost"
+        target={"_blank"} rel="noreferrer" >
+          Stream Online!
+          </a>
+          </li>
+        <li> <Link to="/bio" className="btn btn-ghost ">About Me</Link></li>
 
     </ul>
     </div>
@@ -59,7 +65,13 @@ export const Navbar = () => {
       <Link to="/epSelector" className="btn btn-ghost text-2xl p-2">Listen!</Link>
         </li>
         <li> <Link to="/buy" className="btn btn-ghost text-2xl p-2">Buy!</Link></li>
-        <li> <button className="btn btn-ghost text-2xl p-2">Stream Online</button></li>
+        <li> 
+          <a href= "https://songwhip.com/marumbosichinga/playing-it-safe"
+        className="btn btn-ghost text-2xl p-2"
+        target={"_blank"} rel="noreferrer" >
+          Stream Online!
+          </a>
+          </li>
         <li> <Link to="/bio" className="btn btn-ghost text-2xl p-2">About Me</Link></li>
 
     </ul>
