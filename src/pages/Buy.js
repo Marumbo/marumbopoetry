@@ -84,7 +84,7 @@ const Buy =() => {
     <h1 className="font-bold text-4xl"> Direct download!</h1>
 
     </div>
-    <div className="container flex items-center text-center mx-auto pt-2 mb-4">
+    <div className="container items-center justify-around text-center mx-auto pt-2 mb-4">
            <p className="text-xl">
         You can purchase the album through a direct download by debit/credit card payment, powered by Stripe!
            </p>
