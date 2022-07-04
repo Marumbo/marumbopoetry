@@ -40,8 +40,8 @@ const Buy =() => {
 
         </div>
 
-    <div className="container  sm:flex-col lg:flex-row xl:flex space-y-4 mx-auto space-x-2 p-4 md:space-y-4 ">
-        
+    <div className="container items-center text-center justify-around sm:flex-col lg:flex-row xl:flex space-y-4 mx-auto space-x-2 p-4 md:space-y-4 ">
+    
         <div classname=" flex items-center w-full  md:w-2/3 lg:w-1/2">
             <img src={backCover} 
             height={600}

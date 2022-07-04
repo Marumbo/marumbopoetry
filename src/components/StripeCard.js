@@ -178,7 +178,7 @@ const closeModel = ()=>{
           console.log(e.target.value);
         }}
         placeholder="youremail@email.com" 
-        className=" text-md input input-bordered input-accent input-md" />
+        className=" text-xl input input-bordered input-accent input-md" />
 
 <form id="payment-form" onSubmit={handleSubmit}>
 <CardElement id="card-element" options={{cardStyle,hidePostalCode: true }} />
