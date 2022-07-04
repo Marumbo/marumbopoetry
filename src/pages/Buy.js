@@ -17,13 +17,15 @@ const Buy =() => {
   return (
       <>
     <Navbar />
+    <div className="container flex flex-col items-center p-2 mx-auto">
+
     <div className="container items-center text-center justify-around flex mx-auto pt-2 mb-4">
     
     <h1 className="font-bold text-6xl"> How to Purchase!</h1>
 
     </div>
-    <div className="container flex items-center text-center mx-auto pt-2 mb-4">
-           <p className="text-4xl">
+    <div className="container justify-around items-center text-center mx-auto pt-2 mb-4">
+           <p className="text-xl text-center">
         Thank you for deciding to support my work by purchasing a copy of the project. <br />
         The album can be bought for a minimum of MWK5,0000, RWF5,000 or $5.
 
@@ -32,13 +34,13 @@ const Buy =() => {
         </div>
 
     <div className="container flex items-center text-center mx-auto pt-2 mb-4">
-           <p className="text-4xl">
+           <p className="text-xl text-center">
         Take a screenshot of proof of payment and WhatsApp +265 996 282 948 or email: marumboinfo@gmail.com and we will send you a copy of the project. 
            </p>
 
         </div>
 
-    <div className="container flex sm:flex-col lg:flex-row space-y-4 mx-auto space-x-2 p-4 md:space-y-4 ">
+    <div className="container  sm:flex-col lg:flex-row xl:flex space-y-4 mx-auto space-x-2 p-4 md:space-y-4 ">
         
         <div classname=" flex items-center w-full  md:w-2/3 lg:w-1/2">
             <img src={backCover} 
@@ -51,24 +53,24 @@ const Buy =() => {
 
         <div className="flex flex-col space-y-4">
         
-        <h1 className="font-bold text-center text-4xl"> Payment options for the project!</h1>
+        <h1 className="font-bold text-center text-2xl"> Payment options for the project!</h1>
         
         <div className="flex  flex-col space-y-1">
-            <h1 className="font-bold text-center text-4xl"> Bank:</h1>
-            <h1 className="font-bold text-center text-2xl"> Bank transfer to National Bank</h1>
-            <h1 className="font-bold text-center text-2xl"> Bank account name: Marumbo Sichinga</h1>
-            <h1 className="font-bold text-center text-2xl"> Bank account number: 1000202947</h1>
-            <h1 className="font-bold text-center text-2xl"> Bank branch: Hednerson Street</h1>
+            <h1 className="font-bold text-center text-2xl"> Bank:</h1>
+            <h1 className="font-bold text-center text-xl"> Bank transfer to National Bank</h1>
+            <h1 className="font-bold text-center text-xl"> Bank account name: Marumbo Sichinga</h1>
+            <h1 className="font-bold text-center text-xl"> Bank account number: 1000202947</h1>
+            <h1 className="font-bold text-center text-xl"> Bank branch: Hednerson Street</h1>
         </div>
         
         <div className="flex  flex-col space-y-1">
-            <h1 className="font-bold text-center text-4xl"> Airtel Money:</h1>
-            <h1 className="font-bold text-center text-2xl"> Airtel Money number: 09996282984</h1>
+            <h1 className="font-bold text-center text-xl"> Airtel Money:</h1>
+            <h1 className="font-bold text-center text-xl"> Airtel Money number: 09996282984</h1>
 
         </div>
         <div className="flex  flex-col space-y-1">
-            <h1 className="font-bold text-center text-4xl"> Mtn Mobile Money(Rwanda):</h1>
-            <h1 className="font-bold text-center text-2xl"> Momo: 0787398716</h1>
+            <h1 className="font-bold text-center text-xl"> Mtn Mobile Money(Rwanda):</h1>
+            <h1 className="font-bold text-center text-xl"> Momo: 0787398716</h1>
 
         </div>
        
@@ -79,11 +81,11 @@ const Buy =() => {
       
     <div className="container items-center text-center justify-around flex mx-auto pt-2 mb-4">
     
-    <h1 className="font-bold text-6xl"> Direct download!</h1>
+    <h1 className="font-bold text-4xl"> Direct download!</h1>
 
     </div>
     <div className="container flex items-center text-center mx-auto pt-2 mb-4">
-           <p className="text-4xl">
+           <p className="text-xl">
         You can purchase the album through a direct download by debit/credit card payment, powered by Stripe!
            </p>
 
@@ -95,6 +97,7 @@ const Buy =() => {
     </Elements>
         </div>
 
+    </div>
         
       </>
 

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 import ImageGrid from '../components/ImageGrid'
 import { Navbar } from '../components/Navbar'
-import Typed from 'react-typed';
+import TypeAnimation from 'react-type-animation';
 import BioSection from '../components/BioSection';
 import { send } from 'emailjs-com';
 
@@ -70,6 +70,9 @@ const Bio = () => {
   return (
       <>
       <Navbar />
+      <div className="flex-col items-center">
+
+
 
   <div className={` ${showSuccess ? "": "hidden"} alert alert-success shadow-lg`}>
     <div>
@@ -85,19 +88,25 @@ const Bio = () => {
   </div>
 </div>
 
-      <div className="container justify-around mx-auto px-8 mb-8">
-      <Typed
-      className="flex text-center text-8xl text-black"
-      strings={[
+      <div className="flex text-center items-center justify-around mx-auto px-8 mb-8">
+    
+                
+       <TypeAnimation
+        cursor={true}
+        sequence={[
           'Welcome to my bio!',
-          'But first some pictures!']}
-          typeSpeed={120}
-          attr="placeholder"
-          loop >
-             
-        <input type="text"/>
-                </Typed>
+          6000,
+          'But first some pictures!',
+          6000,
+          
+        ]}
+        className="text-4xl bold md:text-6xl"
+        repeat={3}
+       />
                         
+     </div>
+     <div className="">
+
      </div>
 
       <ImageGrid />
@@ -105,13 +114,15 @@ const Bio = () => {
 
 
       <div className="container flex text-center mx-auto flex-col text-black p-4 space-y-4 mb-16">
-        <h1 className="text-center text-4xl "> If you have gotten this far then maybe you want to be my friend!</h1>
-        <p className="text-center text-2xl">
+        <h1 className="text-center text-2xl "> If you have gotten this far then maybe you want to be my friend!</h1>
+        <p className="text-center text-xl">
         Fill the form below and I will get back to you as quickly as i can!
         </p>
 
         <div className="container flex flex-col pt-8 mx-auto space-y-4 text-center justify-center items-center">
-        <input type="text" 
+      
+        <input type="text"
+        
         name="name"
         value={name}
         onChange={(e)=>{
@@ -120,7 +131,7 @@ const Bio = () => {
           console.log(e.target.value);
         }}
         placeholder="Please enter your name!" 
-        className="text-2xl input input-bordered input-accent input-lg w-96" />
+        className="text-2xl input input-bordered input-accent input-lg md:w-96" />
         
         <input type="text" 
         name="email"
@@ -131,7 +142,7 @@ const Bio = () => {
           console.log(e.target.value);
         }}
         placeholder="youremail@mail.com" 
-        className=" text-2xl input input-bordered input-accent input-lg w-96" />
+        className=" text-2xl input input-bordered input-accent input-lg md:w-96" />
         
         <textarea 
         name="message"
@@ -141,7 +152,7 @@ const Bio = () => {
           setMessage(e.target.value);
           console.log(e.target.value);
         }}
-        className="text-2xl textarea textarea-accent textarea-bordered h-48 w-96 " 
+        className="text-2xl textarea textarea-accent textarea-bordered  md:h-48 md:w-96 " 
         placeholder="Message"></textarea>
        
         <div className="flex mx-auto justify-around space-x-4">
@@ -160,6 +171,7 @@ const Bio = () => {
       </div>
 
 
+      </div>
 
       </>
   )

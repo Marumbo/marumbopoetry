@@ -40,6 +40,11 @@ export const Navbar = () => {
       </label>
       <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       <li>
+      <Link to="/" className=" sm:block md:hidden btn btn-ghost ">
+      MarumboPoetry
+      </Link>
+      </li>
+      <li>
       <Link to="/epSelector" className="btn btn-ghost">Listen!</Link> 
         </li>
         <li> <Link to="/buy" className="btn btn-ghost ">Buy!</Link></li>
@@ -56,7 +61,7 @@ export const Navbar = () => {
     </div>
     <Link to="/">
 
-    <button className="btn btn-ghost text-2xl p-2">MarumboPoetry</button>
+    <button className=" hidden md:block lg:btn btn-ghost text-2xl p-2">MarumboPoetry</button>
     </Link>
   </div>
   <div className="navbar-center hidden lg:flex">

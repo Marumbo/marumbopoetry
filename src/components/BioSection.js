@@ -7,18 +7,18 @@ const BioSection = () => {
    
     <div className="hero flex flex-col bg-black md:space-x-8 sm:flex-col lg:flex-row mx-auto mt-4 space-y-6 p-4">
         
-    <div className="flex md:w-1/3 mx-auto justify-around ">
+    <div className="flex md:w-2/3 mx-auto justify-around ">
    
-    <img className="rounded dropshadow-xl w-full xl:h-1/4 xl:w-2/4" 
-    width={600}
-    height={600}
-    src={bioImage} 
-    alt="Bio"/>
+      <img className="rounded dropshadow-xl w-full " 
+        width={600}
+        height={600}
+        src={bioImage} 
+        alt="Bio"/>
     </div>
 
     <div className="flex flex-col items-center md:w-2/3 mx-auto space-y-4">
-       <h1 className="text-white text-center container text-6xl"> A bit about my poetry journey!</h1>
-    <p className="text-white text-center container text-2xl p-4">
+       <h1 className="text-white text-center container text-2xl md:text-4xl"> A bit about my poetry journey!</h1>
+    <p className="text-white text-center container text-lg p-4 md:text-xl">
 Marumbo Sichinga popularly known as Marumbo the Poet is a Spoken Word Artist from Malawi, Africa.  <br />
 
 Marumbo developed a passion for the creative freedom in poetry while still in college and developed his art for two years to emerge and Malawi's starring poets. 

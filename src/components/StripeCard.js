@@ -177,7 +177,7 @@ const closeModel = ()=>{
           setEmail(e.target.value);
           console.log(e.target.value);
         }}
-        placeholder="youremail@mail.com" 
+        placeholder="youremail@email.com" 
         className=" text-md input input-bordered input-accent input-md" />
 
 <form id="payment-form" onSubmit={handleSubmit}>
