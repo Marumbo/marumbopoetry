@@ -130,7 +130,7 @@ export const SideB = () => {
      //add player container 
 
     }
-        <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center pb-5" >
+        <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center pb-5 px-4" >
             
             <AudioPlayer
               className="player"
