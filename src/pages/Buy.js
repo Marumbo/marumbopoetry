@@ -60,7 +60,7 @@ const Buy =() => {
             <h1 className="font-bold text-center text-xl"> Bank transfer to National Bank</h1>
             <h1 className="font-bold text-center text-xl"> Bank account name: Marumbo Sichinga</h1>
             <h1 className="font-bold text-center text-xl"> Bank account number: 1000202947</h1>
-            <h1 className="font-bold text-center text-xl"> Bank branch: Hednerson Street</h1>
+            <h1 className="font-bold text-center text-xl"> Bank branch: Henderson Street</h1>
         </div>
         
         <div className="flex  flex-col space-y-1">
