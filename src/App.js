@@ -1,5 +1,6 @@
 
 import './App.css';
+import './App.scss';
 import { Hero } from './pages/Hero';
 
 

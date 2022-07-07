@@ -109,13 +109,13 @@ export const SideB = () => {
                 poems.map((poem)=>(
              <div key={poem.id} 
              onClick={()=>updateCurrentPoem(poem.id)}
-             className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200">
+             className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200 dark:bg-slate-500">
                  <div className="flex flex-row space-x-4">
-                <h2 className="sm:text-xl text-2xl"> {poem.id}</h2>
-                 <h2 className="sm:text-xl md:text-2xl text-center font-bold" key={poem.id} > {poem.title}</h2>
+                <h2 className="sm:text-xl text-2xl dark:text-white"> {poem.id}</h2>
+                 <h2 className="sm:text-xl md:text-2xl text-center font-bold dark:text-white" key={poem.id} > {poem.title}</h2>
                 </div>
                 <div className="">
-                    <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>
+                    <h2 className=" sm:text-sm text-2xl dark:text-white">{poem.duration}</h2>
                 </div>
              </div>       
         
@@ -130,7 +130,7 @@ export const SideB = () => {
      //add player container 
 
     }
-        <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center" >
+        <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center pb-5" >
             
             <AudioPlayer
               

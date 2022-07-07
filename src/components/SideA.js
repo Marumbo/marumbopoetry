@@ -9,6 +9,7 @@ import hardtolove from "../audios/hard-to-love.mp3";
 import mosaics from "../audios/mosaic.mp3";
 import playingItSafe from "../audios/playing-it-safe.mp3";
 import starCrossedLovers from "../audios/star-crossed-lovers.mp3";
+import "react-h5-audio-player/lib/styles.css";
 
 export const SideA = () => {
 
@@ -140,12 +141,12 @@ export const SideA = () => {
         </div>
         </animated.div>
 
-          <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col">
+          <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col ">
             {poems.map((poem) => (
               <div
                 key={poem.id}
                 onClick={() => updateCurrentPoem(poem.id)}
-                className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200"
+                className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200 dark:bg-slate-500"
               >
                 <div className="flex flex-row space-x-4">
                   <h2 className="sm:text-2xl text-4xl dark:text-white"> {poem.id}</h2>
@@ -169,9 +170,10 @@ export const SideA = () => {
       {
         //add player container
       }
-      <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center">
+      <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center pb-5">
         
         <AudioPlayer
+        className="player"
           ref={audioPlayer}
           src={poems[currentPoemIndex].src}
           customAdditionalControls={[]}

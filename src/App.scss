@@ -1,0 +1,28 @@
+$rhap_theme-color: #6bed7f !default;   // Color of all buttons and volume/progress indicators
+$rhap_background-color: rgb(177, 152, 232) !default; // Color of the player background
+$rhap_bar-color: #e4e4e4 !default;     // Color of volume and progress bar
+$rhap_time-color: rgb(243, 116, 116) !default;       // Font color of current time and duration
+$rhap_font-family: inherit !default;   // Font family of current time and duration
+
+
+.rhap_container.player {
+    background-color: rgb(55,205,190);
+    display: flex;
+    justify-items: center;
+    padding: 0.25em 0.75em;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    
+
+  }
+  
+  .rhap_controls-section .rhap_main-controls  svg path {
+    fill: rgb(59, 34, 34) !important;
+  }
+  
+  .rhap_controls-section .rhap_volume-controls svg path {
+    fill: rgb(64, 15, 15) !important;
+  }
+  
+  
