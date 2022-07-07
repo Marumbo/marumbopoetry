@@ -133,7 +133,7 @@ export const SideB = () => {
         <animated.div style={fadeInPlayer} className="container flex mt-5 mx-auto justify-center pb-5" >
             
             <AudioPlayer
-              
+              className="player"
             ref={audioPlayer}
             src={poems[currentPoemIndex].src}
             customAdditionalControls={[]}
