@@ -34,7 +34,7 @@ const Buy =() => {
         </div>
 
     <div className="container flex items-center text-center mx-auto pt-2 mb-4">
-           <p className="text-xl text-center">
+           <p className="text-xl text-center items-center  mx-auto">
         Take a screenshot of proof of payment and WhatsApp +265 996 282 948 or email: marumboinfo@gmail.com and we will send you a copy of the project. 
            </p>
 
