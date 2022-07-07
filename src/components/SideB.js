@@ -109,7 +109,7 @@ export const SideB = () => {
                 poems.map((poem)=>(
              <div key={poem.id} 
              onClick={()=>updateCurrentPoem(poem.id)}
-             className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200 dark:bg-slate-500 dark:hover:bg-slate-500">
+             className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200 dark:bg-slate-500 dark:hover:bg-slate-300">
                  <div className="flex flex-row space-x-4">
                 <h2 className="sm:text-xl text-2xl dark:text-white"> {poem.id}</h2>
                  <h2 className="sm:text-xl md:text-2xl text-center font-bold dark:text-white" key={poem.id} > {poem.title}</h2>
