@@ -4,7 +4,7 @@ import imgSideA from "../images/sideA.jpeg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useSpring, animated, easings } from "react-spring";
-
+import { Link } from "react-router-dom";
 import hardtolove from "../audios/hard-to-love.mp3";
 import mosaics from "../audios/mosaic.mp3";
 import playingItSafe from "../audios/playing-it-safe.mp3";
@@ -135,6 +135,9 @@ export const SideA = () => {
             A story of love found and lost. <br />
             Identity lost and found.
           </p>
+          <div className="text-lg">
+        <Link to="/buy" className="btn btn-md btn-accent text-lg mt-2">Buy Now!</Link>
+        </div>
         </animated.div>
 
           <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col">
@@ -145,9 +148,9 @@ export const SideA = () => {
                 className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200"
               >
                 <div className="flex flex-row space-x-4">
-                  <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
+                  <h2 className="sm:text-2xl text-4xl dark:text-white"> {poem.id}</h2>
                   <h2
-                    className="sm:text-2xl md:text-4xl text-center font-bold"
+                    className="sm:text-xl md:text-2xl text-center font-bold dark:text-white"
                     key={poem.id}
                     
                   >
@@ -156,7 +159,7 @@ export const SideA = () => {
                   </h2>
                 </div>
                 <div className="">
-                  <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>
+                  <h2 className=" sm:text-sm text-2xl dark:text-white">{poem.duration}</h2>
                 </div>
               </div>
             ))}

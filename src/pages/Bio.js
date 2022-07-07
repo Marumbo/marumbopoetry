@@ -116,7 +116,7 @@ const Bio = () => {
       <div className="container flex text-center mx-auto flex-col text-black p-4 space-y-4 mb-16">
         <h1 className="text-center text-2xl "> If you have gotten this far then maybe you want to be my friend!</h1>
         <p className="text-center text-xl">
-        Fill the form below and I will get back to you as quickly as i can!
+        Fill the form below and I will get back to you as quickly as I can!
         </p>
 
         <div className="container flex flex-col pt-8 mx-auto space-y-4 text-center justify-center items-center">

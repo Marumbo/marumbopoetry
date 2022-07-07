@@ -21,7 +21,7 @@ const BioSection = () => {
     <p className="text-white text-center container text-lg p-4 md:text-xl">
 Marumbo Sichinga popularly known as Marumbo the Poet is a Spoken Word Artist from Malawi, Africa.  <br />
 
-Marumbo developed a passion for the creative freedom in poetry while still in college and developed his art for two years to emerge and Malawi's starring poets. 
+Marumbo developed a passion for the creative freedom in poetry while still in college and developed his art for two years to emerge as Malawi's starring poets. 
 He has since then been featured at Lake of Stars for two consecutive years since 2015, 
 first performing on the Village stage and in 2016 being one of the young acts on the main stage.
 <br />
@@ -44,7 +44,7 @@ In 2021 He was selected to represent Malawi in the Africa Cup of Slam poetry, in
 the semi finals where held in Addis Ababa, Ethiopia. The second edition of the Africa Cup of Slam poetry saw over 33 countries compete and carry their nations flags.
 <br />
 
-In 2021 Marumbo Parnter with Zeeya Creations to release a video of the poem titled My Son which deals with gender based violence, a message to all the sons and brother and fathers. 
+In 2021 Marumbo Partnered with Zeeya Creations to release a video of the poem titled My Son which deals with gender based violence, a message to all the sons and brother and fathers. 
 <br />
 
         </p>

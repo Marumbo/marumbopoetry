@@ -4,7 +4,7 @@ import imgSideB from "../images/sideB.jpeg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import sideBaudio from "../audios/sideBaudio.mp3"
-
+import { Link } from "react-router-dom";
 
 
 export const SideB = () => {
@@ -101,6 +101,7 @@ export const SideB = () => {
         Experience the art in a new way!
         </p>
         <h2 className="text-xl font-bold"> Press play and enjoy!</h2>
+        <Link to="/buy" className="btn btn-md btn-accent text-lg mt-2">Buy Now!</Link>
     </animated.div>
         
         <animated.div style={fadeInPoems} className="sm:px-0  flex px-4 pt-4 flex-col">
@@ -110,8 +111,8 @@ export const SideB = () => {
              onClick={()=>updateCurrentPoem(poem.id)}
              className="sm:space-y-0 sm:mx-2 flex flex-row justify-between md:my-2 md:space-y-0 border-2 px-2 py-2 rounded bg-slate-300 hover:bg-slate-200">
                  <div className="flex flex-row space-x-4">
-                <h2 className="sm:text-2xl text-4xl"> {poem.id}</h2>
-                 <h2 className="sm:text-2xl md:text-4xl text-center font-bold" key={poem.id} > {poem.title}</h2>
+                <h2 className="sm:text-xl text-2xl"> {poem.id}</h2>
+                 <h2 className="sm:text-xl md:text-2xl text-center font-bold" key={poem.id} > {poem.title}</h2>
                 </div>
                 <div className="">
                     <h2 className=" sm:text-sm text-2xl">{poem.duration}</h2>

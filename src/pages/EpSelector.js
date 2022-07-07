@@ -25,7 +25,7 @@ export const EpSelector = () => {
 
     <div className="flex flex-col items-center justify-center my-4">
        <h1 className="flex max-w-sm text-center italic text-6xl">
-        Ep Selector! 
+        Pick a side! 
            </h1> 
            
         </div>
