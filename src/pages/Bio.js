@@ -96,12 +96,12 @@ const Bio = () => {
         sequence={[
           'Welcome to my bio!',
           6000,
-          'But first some pictures!',
+          'But first pictures!',
           6000,
           
         ]}
         className="text-4xl bold md:text-6xl"
-        repeat={3}
+        repeat={2}
        />
                         
      </div>

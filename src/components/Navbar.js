@@ -41,7 +41,7 @@ export const Navbar = () => {
       <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
       <li>
       <Link to="/" className=" sm:block md:hidden btn btn-ghost ">
-      MarumboPoetry
+      MarumboPoetry!
       </Link>
       </li>
       <li>
@@ -55,7 +55,7 @@ export const Navbar = () => {
           Stream Online!
           </a>
           </li>
-        <li> <Link to="/bio" className="btn btn-ghost ">About Me</Link></li>
+        <li> <Link to="/bio" className="btn btn-ghost ">About Me!</Link></li>
 
     </ul>
     </div>
@@ -77,7 +77,7 @@ export const Navbar = () => {
           Stream Online!
           </a>
           </li>
-        <li> <Link to="/bio" className="btn btn-ghost text-2xl p-2">About Me</Link></li>
+        <li> <Link to="/bio" className="btn btn-ghost text-2xl p-2">About Me!</Link></li>
 
     </ul>
   </div>
