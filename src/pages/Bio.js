@@ -105,11 +105,11 @@ const Bio = () => {
        />
                         
      </div>
-     <div className="">
-
+     <div className="flex text-center items-center justify-around lg:justify-center lg:justify-items-center lg:px-6 lg:mx-auto">
+     <ImageGrid />
      </div>
 
-      <ImageGrid />
+
       <BioSection />
 
 
