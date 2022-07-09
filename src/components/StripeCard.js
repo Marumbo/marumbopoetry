@@ -4,7 +4,7 @@ import {
   useStripe,
   useElements
 } from "@stripe/react-stripe-js";
-import sideBfiles from "../epFile/sideBfiles.zip"
+import playingItSafeDeluxe from "../epFile/Playing_it_Safe_Deluxe_Edition.zip"
 
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -155,7 +155,7 @@ const closeModel = ()=>{
   
 
       <a  className= {`${downloadPressed ? "btn btn-disabled":  "btn"}`}
-        href= {` ${downloadPressed ? sideBfiles : ""}`}
+        href= {` ${downloadPressed ? playingItSafeDeluxe : ""}`}
         download="Playing_it_safe.zip"
         onClick={()=>setDownloadPressed(true)}
         >

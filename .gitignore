@@ -27,3 +27,5 @@ node_modules
 src/audios/
 src/epFile/
 src/images/
+
+.env

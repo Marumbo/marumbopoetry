@@ -5,11 +5,14 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useSpring, animated, easings } from "react-spring";
 import { Link } from "react-router-dom";
-import hardtolove from "../audios/hard-to-love.mp3";
-import mosaics from "../audios/mosaic.mp3";
-import playingItSafe from "../audios/playing-it-safe.mp3";
-import starCrossedLovers from "../audios/star-crossed-lovers.mp3";
-import "react-h5-audio-player/lib/styles.css";
+import hardtolove from "../audios/sideA/Hardtolove.mp3";
+import mosaics from "../audios/sideA/Mosaic.mp3";
+import playingItSafe from "../audios/sideA/playingItSafe.mp3";
+import starCrossedLovers from "../audios/sideA/starCrossLovers.mp3";
+import swimmingAndForeignTongues from "../audios/sideA/swimmingAndForeignTongues.mp3";
+import theProblem from "../audios/sideA/theProblem.mp3";
+import whatIf from "../audios/sideA/whatIf.mp3";
+
 
 export const SideA = () => {
 
@@ -79,6 +82,24 @@ export const SideA = () => {
       title: "Star Crossed Lovers",
       duration: "01:32",
       src: starCrossedLovers,
+    },
+    {
+      id: 5,
+      title: "Swimming & Foreign Tongues",
+      duration: "02:37",
+      src: swimmingAndForeignTongues,
+    },
+    {
+      id: 6,
+      title: "The Problem",
+      duration: "03:12",
+      src: theProblem,
+    },
+    {
+      id: 7,
+      title: "What If",
+      duration: "01:56",
+      src: whatIf,
     },
   ]);
 

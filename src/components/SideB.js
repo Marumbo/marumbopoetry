@@ -3,8 +3,15 @@ import { useSpring, animated, easings } from "react-spring";
 import imgSideB from "../images/sideB.jpeg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import sideBaudio from "../audios/sideBaudio.mp3"
 import { Link } from "react-router-dom";
+import hardtolove from "../audios/sideB/hardToLove.mp3";
+import mosaics from "../audios/sideB/mosaics.mp3";
+import playingItSafe from "../audios/sideB/playingItSafe.mp3";
+import starCrossedLovers from "../audios/sideB/starCrossLovers.mp3";
+import swimmingAndForeignTongues from "../audios/sideB/swimmingAndForeignTongues.mp3";
+import theProblem from "../audios/sideB/theProblem.mp3";
+import whatIf from "../audios/sideB/whatIf.mp3";
+
 
 
 export const SideB = () => {
@@ -55,12 +62,48 @@ export const SideB = () => {
     const [poems] = useState(
     [
 
-        {
-            "id":1,
-            "title":"Playing it safe (The Twnda cut!)",
-            "duration":"18:50",
-            "src": sideBaudio
-        }
+      {
+        id: 1,
+        title: "Hard to love -B",
+        duration: "01:56",
+        src: hardtolove,
+      },
+      {
+        id: 2,
+        title: "Mosaics -B",
+        duration: "02:07",
+        src: mosaics,
+      },
+      {
+        id: 3,
+        title: "Playing it safe -B",
+        duration: "02:54",
+        src: playingItSafe,
+      },
+      {
+        id: 4,
+        title: "Star Crossed Lovers -B",
+        duration: "02:37",
+        src: starCrossedLovers,
+      },
+      {
+        id: 5,
+        title: "Swimming & Foreign Tongues -B",
+        duration: "02:37",
+        src: swimmingAndForeignTongues,
+      },
+      {
+        id: 6,
+        title: "The Problem -B",
+        duration: "03:54",
+        src: theProblem,
+      },
+      {
+        id: 7,
+        title: "What If -B",
+        duration: "03:21",
+        src: whatIf,
+      },
     ])
 
      const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
