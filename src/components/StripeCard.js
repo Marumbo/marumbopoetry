@@ -93,6 +93,17 @@ const closeModel = ()=>{
       if(backendError)
      {
        console.log(backendError.message)
+
+       setMessage(backendError.message);
+        
+       setShowWarning(true);
+       setInterval (()=> {
+         setShowWarning(false)
+       },10000)
+
+       console.log("Stripe error message:")
+       console.log(backendError.message)
+       setIsLoading(false);
      }
 
     //  const clientSecret = clientSecretFetch
@@ -120,7 +131,7 @@ const closeModel = ()=>{
         setShowWarning(true);
         setInterval (()=> {
           setShowWarning(false)
-        },6000)
+        },10000)
 
         console.log("Stripe error message:")
         console.log(stripeError.message)
