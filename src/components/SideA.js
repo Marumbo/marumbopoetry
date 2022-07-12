@@ -61,7 +61,7 @@ export const SideA = () => {
   const [poems] = useState([
     {
       id: 1,
-      title: "Hard to love",
+      title: "Hard To Love",
       duration: "01:28",
       src: hardtolove,
     },
@@ -73,7 +73,7 @@ export const SideA = () => {
     },
     {
       id: 3,
-      title: "Playing it safe",
+      title: "Playing It Safe",
       duration: "02:54",
       src: playingItSafe,
     },

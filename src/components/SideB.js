@@ -64,7 +64,7 @@ export const SideB = () => {
 
       {
         id: 1,
-        title: "Hard to love -B",
+        title: "Hard To Love -B",
         duration: "01:56",
         src: hardtolove,
       },
@@ -76,7 +76,7 @@ export const SideB = () => {
       },
       {
         id: 3,
-        title: "Playing it safe -B",
+        title: "Playing It Safe -B",
         duration: "02:54",
         src: playingItSafe,
       },
