@@ -168,6 +168,7 @@ const closeModel = ()=>{
   <label class="modal-box relative" for="">
     <h3 class="text-lg font-bold">Thank you for your purchase!</h3>
     <p class="py-4">Please click download to start your download!!</p>
+    <p class="py-4">Allow a few seconds for the direct download to kick in!</p>
     <p class="py-4">If you run into any problems please email us @: marumboinfo@gmail.com</p>
   <div class="modal-action">
       <label for="my-modal" class="btn" onClick={()=>closeModel()}>Close!</label>
