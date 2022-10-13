@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImage from "../images/heroImage.jpg"
+import heroImage from "../images/hero.jpg"
 import { Navbar } from '../components/Navbar'
 import { Link } from "react-router-dom";
 
