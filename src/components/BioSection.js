@@ -33,18 +33,35 @@ and the social upheavals that have rocked Malawi.
 
 These were also essential in driving him into more well-meaning and relatable poetry that not only entertains but also educates and raises awareness for the struggles 
 and issues of daily life. 
-They have been showcased in an array of contexts in his debut EP 'Broken Keys' which is scheduled for release in November 2016.
-He released a Second project which was an EP titled “Conversations of a Broken and Mended heart”. 
+They have been showcased in an array of contexts in his debut EP  <a href= "https://songwhip.com/marumbosichinga/broken-keys"
+        className="font-bold font-link"
+        target={"_blank"} rel="noreferrer" >
+          "Broken Keys" 
+          </a> <span> </span>
+            which is scheduled for release in November 2016.
+He released a Second project which was an EP titled <a href= "https://audiomack.com/marumbopoetry"
+        className="font-bold font-link"
+        target={"_blank"} rel="noreferrer" >
+          “Conversations of a Broken and Mended heart”. 
+          </a> <span> </span>  
 An experimental project that fused hip hop beats and traditional poetry with story telling. An expression of young love; the process of heart break and healing from love lost. 
 The project helped to attract a new fan base that wouldn’t typically listen to poetry.
 <br />
 
-He released his third album titled "Things I Wish I Said" on 9th November, 2019 at Woodlands in Lilongwe, Malawi.
+He released his third album titled <a href= "https://songwhip.com/marumbosichinga/things-i-wish-i-said"
+        className="font-bold font-link"
+        target={"_blank"} rel="noreferrer" >
+          "Things I Wish I Said" 
+          </a> <span> </span>   on 9th November, 2019 at Woodlands in Lilongwe, Malawi.
 In 2021 He was selected to represent Malawi in the Africa Cup of Slam poetry, initial rounds where held virtually due to the spread of the coronavirus, 
 the semi finals where held in Addis Ababa, Ethiopia. The second edition of the Africa Cup of Slam poetry saw over 33 countries compete and carry their nations flags.
 <br />
 
-In 2021 Marumbo Partnered with Zeeya Creations to release a video of the poem titled My Son which deals with gender based violence, a message to all the sons and brother and fathers. 
+In 2021 Marumbo Partnered with Zeeya Creations to release a video of the poem titled  <a href= "https://youtu.be/gVyiqYA1ukg"
+        className="font-bold font-link"
+        target={"_blank"} rel="noreferrer" >
+          My Son 
+          </a> <span> </span> which deals with gender based violence, a message to all the sons and brother and fathers. 
 <br />
 
         </p>

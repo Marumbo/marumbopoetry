@@ -145,6 +145,41 @@ const closeModel = ()=>{
       console.log(paymentIntent.status);
 
       if(paymentIntent.status ==="succeeded"){
+        console.log("save purchase");
+
+    const { error: purchaseDbSaveError, purchaseDbSaveResult } = await fetch(
+      `${process.env.REACT_APP_Payment_Server_Url}/purchase/create`,
+      {
+        method: "POST",
+       
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+        
+          email: email,
+         transId: paymentIntent.id,
+          
+        }),
+      }
+    ).then((res) =>
+      res
+        .json()
+        .catch((error) => console.log(error))
+    );
+
+    if(purchaseDbSaveError){
+      console.log("whatsapp message error")
+      console.log(purchaseDbSaveError.message)
+      
+    }
+    
+    if(purchaseDbSaveResult){
+      console.log("whatsapp message save")
+      console.log(purchaseDbSaveResult.message)
+    }
+
         console.log("save file and open model")
 
         setPaymentDone(true);

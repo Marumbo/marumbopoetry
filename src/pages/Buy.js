@@ -27,7 +27,7 @@ const Buy =() => {
     <div className="container justify-around items-center text-center mx-auto pt-2 mb-4">
            <p className="text-xl text-center">
         Thank you for deciding to support my work by purchasing a copy of the project. <br />
-        The album can be bought for a minimum of MWK5,0000, RWF5,000 or $5.
+        The album can be bought for a minimum of <span className="font-bold">MWK5,000</span>, <span className="font-bold">RWF5,000 </span> or <span className="font-bold">$5.</span>
 
            </p>
 
@@ -65,7 +65,7 @@ const Buy =() => {
         
         <div className="flex  flex-col space-y-1">
             <h1 className="font-bold text-center text-xl"> Airtel Money:</h1>
-            <h1 className="font-bold text-center text-xl"> Airtel Money number: 09996282984</h1>
+            <h1 className="font-bold text-center text-xl"> Airtel Money number: 0996282984</h1>
 
         </div>
         <div className="flex  flex-col space-y-1">
