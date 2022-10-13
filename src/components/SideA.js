@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import imgSideA from "../images/sideA.jpeg";
+import imgSideA from "../images/sideA.jpg";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { useSpring, animated, easings } from "react-spring";

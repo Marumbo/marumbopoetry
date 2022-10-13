@@ -1,5 +1,5 @@
 import React from 'react'
-import bioImage from '../images/bioImage.JPG'
+import bioImage from '../images/bioImage.jpg'
 
 
 const BioSection = () => {
