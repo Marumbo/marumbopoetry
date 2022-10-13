@@ -209,7 +209,7 @@ export const SideB = () => {
             showSkipControls={true}
             autoPlay = {false}
             onClickPrevious={() => previousClick(poems[currentPoemIndex].id)}
-          onClickNext={() => nextClick(poems[currentPoemIndex].id)}
+            onClickNext={() => nextClick(poems[currentPoemIndex].id)}
             header= {`Now playing: ${poems[currentPoemIndex].title}`}
             
            // onLoadStart={()=>{console.log("load start")}}
