@@ -2,9 +2,9 @@ import React from 'react'
 import stagePic1 from '../images/stagePic1.jpg'
 import stagePic2 from '../images/stagePic2.jpg'
 import stagePic3 from '../images/stagePic3.jpg'
-import studio1 from '../images/studio1.jpg'
-import studio2 from '../images/studio2.jpg'
-import studio3 from '../images/studio3.jpg'
+import studio1 from '../images/studioOne.jpg'
+import studio2 from '../images/studioTwo.jpg'
+import studio3 from '../images/studioThree.jpg'
 
 
 const ImageGrid = () => {
