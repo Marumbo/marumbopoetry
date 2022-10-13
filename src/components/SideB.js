@@ -107,6 +107,32 @@ export const SideB = () => {
     ])
 
      const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
+ 
+
+
+  const previousClick = (id) => {
+    console.log("previous click");
+    console.log(id);
+
+    if (id - 2 <= 0) {
+      setCurrentPoemIndex(0);
+    } else {
+      setCurrentPoemIndex(id - 2);
+    }
+    console.log("after");
+    console.log(currentPoemIndex);
+  };
+
+  const nextClick = (id) => {
+    console.log("next click");
+
+    if (id >= poems.length) {
+      setCurrentPoemIndex(poems.length - 1);
+    } else {
+      setCurrentPoemIndex(id);
+    }
+  };
+
     
     const updateCurrentPoem =(id) =>{
       
@@ -180,9 +206,10 @@ export const SideB = () => {
             ref={audioPlayer}
             src={poems[currentPoemIndex].src}
             customAdditionalControls={[]}
-            
+            showSkipControls={true}
             autoPlay = {false}
-           
+            onClickPrevious={() => previousClick(poems[currentPoemIndex].id)}
+          onClickNext={() => nextClick(poems[currentPoemIndex].id)}
             header= {`Now playing: ${poems[currentPoemIndex].title}`}
             
            // onLoadStart={()=>{console.log("load start")}}
